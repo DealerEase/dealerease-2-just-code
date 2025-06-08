@@ -7,11 +7,11 @@ export default function FeaturesPage() {
   const [total, setTotal] = useState(199);
 
   const features = [
-    { name: "AI Description Builder", price: 50 },
+    { name: "AI Description Builder", price: 39 },
     { name: "AI Messenger Responder", price: 75 },
     { name: "Lead Follow-Up Automation", price: 75 },
     { name: "AI Voice Assistant", price: 100 },
-    { name: "Document Scanner & Fraud Detection", price: 125 }
+    { name: "Document Scanner & Fraud Detection", price: 199 }
   ];
 
   const toggleFeature = (name, price) => {
@@ -34,7 +34,7 @@ export default function FeaturesPage() {
         <h1 className="text-4xl font-bold text-white mb-10">DealerEase Features & Pricing</h1>
 
         <section className="w-full max-w-6xl mb-20">
-          <h2 className="text-2xl font-bold text-white mb-6">Included Services</h2>
+          <h2 className="text-2xl font-bold text-white mb-6">Available Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, idx) => (
               <div key={idx} className="bg-neutral-900 p-6 rounded-2xl">
