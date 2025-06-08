@@ -21,15 +21,3 @@ export default function Header() {
           <Link href="#"><span className="hover:text-white cursor-pointer">Contact</span></Link>
         </nav>
 
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-white focus:outline-none"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          ☰
-        </button>
-      </div>
-
-      
-  );
-}
