@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import Header from "../components/Header.js";
+import Header from "../components/Header";
 
 export default function FeaturesPage() {
   const [selected, setSelected] = useState([]);
