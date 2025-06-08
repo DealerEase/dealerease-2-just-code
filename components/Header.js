@@ -30,15 +30,6 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile Nav Menu */}
-      {isOpen && (
-        <div className="md:hidden mt-4 space-y-2 text-gray-300 text-lg px-4">
-          <Link href="/"><span className="block hover:text-white">Home</span></Link>
-          <Link href="/features"><span className="block hover:text-white">Features</span></Link>
-          <Link href="#"><span className="block hover:text-white">About</span></Link>
-          <Link href="#"><span className="block hover:text-white">Contact</span></Link>
-        </div>
-      )}
-    </header>
+      
   );
 }
