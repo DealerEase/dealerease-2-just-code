@@ -2,13 +2,16 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="w-full px-6 py-4 bg-black">
-      <div className="max-w-6xl mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-3">
+    <header className="bg-black w-full px-6 py-4 sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto flex flex-row items-center justify-between">
+        {/* Left: Logo and Name */}
+        <div className="flex items-center space-x-3">
           <img src="/logo.svg" alt="DealerEase Logo" className="h-10 w-auto" />
           <span className="text-2xl font-semibold text-white">DealerEase</span>
         </div>
-        <nav className="space-x-6 text-lg text-gray-300">
+
+        {/* Right: Navigation */}
+        <nav className="flex items-center space-x-6 text-lg text-gray-300">
           <Link href="/"><span className="hover:text-white cursor-pointer">Home</span></Link>
           <Link href="/features"><span className="hover:text-white cursor-pointer">Features</span></Link>
           <Link href="#"><span className="hover:text-white cursor-pointer">About</span></Link>
